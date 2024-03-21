@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rental Page</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="area.html">Area</a></li>
+                <li><a href="availability.html">Availability</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="reviews">
+        <h2>Leave a Review</h2>
+        <div class="review-form">
+            <form id="reviewForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </form>
+        <div class="rating">
+            <span class="star" data-rating="1">&#9733;</span>
+            <span class="star" data-rating="2">&#9733;</span>
+            <span class="star" data-rating="3">&#9733;</span>
+            <span class="star" data-rating="4">&#9733;</span>
+            <span class="star" data-rating="5">&#9733;</span>
+        </div>
+        <textarea id="comment" placeholder="Write your review here..."></textarea>
+        <button onclick="submitReview()">Submit Review</button>
+    </section>
+
+    <section class="comments">
+        <h2>Comments</h2>
+        <ul id="commentList">
+            <!-- Comment items will be added dynamically here -->
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 las Vegas Rental. All rights reserved.</p>
+    </footer>
+    <script src="review.js"></script>
+</body>
+</html>

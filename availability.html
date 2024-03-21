@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendar Viewer </title>
+<link rel="stylesheet" href="ava.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="area.html">Area</a></li>
+            <li><a href="availability.html">Availability</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="calendar-container">
+  <div class="calendar-header">
+    <button class="prev-btn" onclick="prevMonth()">&lt;</button>
+    <h2 id="month-year"></h2>
+    <button class="next-btn" onclick="nextMonth()">&gt;</button>
+  </div>
+  <div class="calendar-grid" id="calendar-grid"></div>
+</div>
+<footer>
+  <p>&copy; 2024 Las Vegas rental. All rights reserved.</p>
+</footer>
+
+<script src="ava.js"></script>
+</body>
+</html>
